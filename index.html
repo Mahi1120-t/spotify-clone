@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify clone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-grey">
+            <div class="close">
+                <img width="30" class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <ul>
+                    <div class="logo"><img class="invert" src="logo.svg" alt="" width="24px">Spotify</div>
+                    <li><img class="invert" src="home.svg" alt="Home" width="24px">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search" width="24px">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1">
+                <div class="heading">
+                    <img class="invert" src="library.svg" alt="" width="24px">
+                    <h2>Your Library</h2>
+
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded p-1">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" src="hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="SignUp">Sign up</button>
+                    <button class="Login">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylist">
+                <h1>Spotify Playlist</h1>
+                <div class="cardcontainer">
+                    <div class="card" data-song="songs/Ilahi.mp3">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4"
+                            alt="Yeh Jawaani Hai Deewani - Album by Pritam | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Yeh Jawani Hai Deewani</h3>
+                        <p>Pritam</p>
+                    </div>
+                    <div class="card" data-song="songs/Sahiba_192-(PagalWorldi.In).mp3">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b273b5e7944443cec785db91184b"
+                            alt="Sahiba - Single by Jasleen Royal, Stebin Ben, Vijay Deverakonda | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Sahiba</h3>
+                        <p>Jasleen Royal,Stebin Ben,Vijay Deverakonda</p>
+                    </div>
+                    <div class="card" data-song="songs/Dekho%20Na%20Dekho%20Na%20Zulfon%20Se%20-%20PagalWorld.mp3">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55"
+                            alt="Jo Tum Mere Ho - Single by Anuv Jain | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Jo Tum Mere Ho</h3>
+                        <p>Aniv Jain</p>
+                    </div>
+                    <div class="card" data-song="songs/Raanjhan-128kbps.mp3">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b273773c5f60bcb309ef8802e4ef"
+                            alt="Raanjhan (From &quot;Do Patti&quot;) - Single by Sachet-Parampara, Parampara Tandon, Kausar Munir | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Raanjhan(From "Do Patti")</h3>
+                        <p>Sachet-Parampara,Prampara Tandon,kausar...</p>
+                    </div>
+                    <div class="card"
+                        data-song="songs/Hamari%20Adhuri%20Kahani%20Title%20Track%20From%20Hamari%20Adhuri%20Kahani-128kbps.mp3">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b273b0f9ceb59927ab76fe6269be"
+                            alt="Hamari Adhuri Kahani (Original Motion Picture Soundtrack) - Album by Jeet Gannguli, Mithoon, Ami Mishra | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Hamari Adhuri Kahani</h3>
+                        <p>Jeet Gannguli,Mithoon,Ami Mishra</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="Aashiqui 2"
+                            class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+                            srcset="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3 150w, https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3 300w, https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3 320w, https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3 640w"
+                            sizes="(min-width: 1280px) 232px, 192px">
+                        <h3>Aashiqui2</h3>
+                        <p>Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="lazy"
+                            src="https://i.scdn.co/image/ab67616d00001e0279f4a87c23143f0abb14c279"
+                            alt="Mismatched: Season 3 (Soundtrack from the Netflix Series)"
+                            class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+                            srcset="https://i.scdn.co/image/ab67616d00001e0279f4a87c23143f0abb14c279 150w, https://i.scdn.co/image/ab67616d00001e0279f4a87c23143f0abb14c279 300w, https://i.scdn.co/image/ab67616d0000b27379f4a87c23143f0abb14c279 320w, https://i.scdn.co/image/ab67616d0000b27379f4a87c23143f0abb14c279 640w"
+                            sizes="(min-width: 1280px) 232px, 192px">
+                        <h3>Mismatched season3:(soundtrack from netflix series)</h3>
+                        <p>Mismatched-cast</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b273bb25239324c4e16ae01fda36"
+                            alt="Making Memories - Album by Karan Aujla, Ikky | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Making Memories</h3>
+                        <p>Karan Aujla,Ikky</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                        <img aria-hidden="false" draggable="false" loading="eager"
+                            src="https://i.scdn.co/image/ab67616d0000b2737f35adfbec3bb2bc8256802b"
+                            alt="Who (Remixes) - Single by Jimin | Spotify"
+                            class="mMx2LUixlnN_Fu45JpFB RmbxUFLb4j9KmgftJyk1 Yn2Ei5QZn19gria6LjZj">
+                        <h3>Who(Remixes)</h3>
+                        <p>Jimin</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="controls">
+                        <button id="prev">&#9664;&#9664;</button>
+                        <button id="play">&#9654;</button>
+                        <button id="next">&#9654;&#9654;</button>
+                    </div>
+                    <div class="progress-container">
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="progress" value="0" min="0" max="100" />
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
